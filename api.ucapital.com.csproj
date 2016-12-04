@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51DCEA54-3A4C-41E4-90F4-7101BE3B3C88}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>api.UCapital.com</RootNamespace>
+    <AssemblyName>api.UCapital.com</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>true</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="affiliates\accounts.json.md" />
+    <None Include="affiliates\lead-register.md" />
+    <None Include="affiliates\login.md" />
+    <None Include="affiliates\readme.md" />
+    <None Include="affiliates\transactions.json.md" />
+    <None Include="affiliates\user-email-is-available.md" />
+    <None Include="affiliates\user-get-balance.md" />
+    <None Include="affiliates\user-get-closed-position.md" />
+    <None Include="affiliates\user-get-open-position.md" />
+    <None Include="affiliates\user-get-trading-options.md" />
+    <None Include="affiliates\user-login.md" />
+    <None Include="affiliates\user-open-position.md" />
+    <None Include="affiliates\user-register.md" />
+    <None Include="cellxpert\affiliates %28deprecated%29.md" />
+    <None Include="cellxpert\funds.md" />
+    <None Include="cellxpert\positions.md" />
+    <None Include="cellxpert\update-affiliate.md" />
+    <None Include="cellxpert\users.md" />
+    <None Include="charts\get-tick-quotes.md" />
+    <None Include="client-tracking\log-event.md" />
+    <None Include="deposit-events\get-upgrade-rule.md" />
+    <None Include="diagnostics\dump.md" />
+    <None Include="diagnostics\qm-snapshot.md" />
+    <None Include="leads-and-users\GetUserDetails.md" />
+    <None Include="leads-and-users\SetUserDetails - deprecated.md" />
+    <None Include="leads-and-users\SetUserDetails2.md" />
+    <None Include="README.md" />
+    <None Include="rss\feed.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
